@@ -42,7 +42,7 @@ async def resume(_, message: Message):
         await message.reply_text("**ՏհɑƘíժɑ:**▶️ Resumed.")
 
 
-@Client.on_message(command(["stop", "s"]))
+@Client.on_message(command(["stop", "s","end"]))
 @errors
 @admins_only
 async def stop(_, message: Message):
@@ -58,7 +58,7 @@ async def stop(_, message: Message):
         await message.reply_text("**ՏհɑƘíժɑ:**⏹ Stopped streaming.")
 
 
-@Client.on_message(command(["skip", "f"]))
+@Client.on_message(command(["skip", "f","next"]))
 @errors
 @admins_only
 async def skip(_, message: Message):
